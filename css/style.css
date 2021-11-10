@@ -1,0 +1,80 @@
+*, *:before, *:after {
+    -webkit-box-sizing: border-box; 
+    -moz-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+.container {
+    width: 78%;
+    margin: 0 auto;
+    padding: 0px;
+    position: relative;
+}
+h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    color: #75B79E;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+}
+body{
+    background-color: #eef9bf;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    text-align: center;
+    flex-direction: column;
+}
+
+.parrots{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.parrot{
+    background-color: #A7E9AF;
+    border: 1px solid #99CEA8;
+    border-radius: 5px;
+    width: 117px;
+    height: 146px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    cursor: pointer;
+}
+.parrotImg{
+    width: 100px;
+    height: 100px;
+}
+
+.escondido{
+    display: none;
+}
+
+.virar{
+    transform: rotateY(180deg);
+    transition: all 200ms ease-in;
+}
+.desvirar{
+    transform: rotateY(360deg);
+    transition: all 200ms ease-in;
+}
+.cronometro span{
+    font-size: 18px;
+    color: #75B79E;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 500px){
+    .parrots{
+        justify-content: center;
+    }
+}
